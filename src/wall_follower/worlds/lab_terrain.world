@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <world name="default">
+    <include><uri>model://ground_plane</uri></include>
+    <include><uri>model://sun</uri></include>
+
+    <model name="box_walls">
+      <static>true</static>
+      <link name="link">
+        <!-- Inside of the box spans (0,0) to (2,2) metres -->
+        <collision name="wall_bottom"><pose>1 -0.025 0.25 0 0 0</pose><geometry><box><size>2.1 0.05 0.5</size></box></geometry></collision>
+        <visual name="wall_bottom"><pose>1 -0.025 0.25 0 0 0</pose><geometry><box><size>2.1 0.05 0.5</size></box></geometry></visual>
+
+        <collision name="wall_top"><pose>1 2.025 0.25 0 0 0</pose><geometry><box><size>2.1 0.05 0.5</size></box></geometry></collision>
+        <visual name="wall_top"><pose>1 2.025 0.25 0 0 0</pose><geometry><box><size>2.1 0.05 0.5</size></box></geometry></visual>
+
+        <collision name="wall_left"><pose>-0.025 1 0.25 0 0 0</pose><geometry><box><size>0.05 2.1 0.5</size></box></geometry></collision>
+        <visual name="wall_left"><pose>-0.025 1 0.25 0 0 0</pose><geometry><box><size>0.05 2.1 0.5</size></box></geometry></visual>
+
+        <collision name="wall_right"><pose>2.025 1 0.25 0 0 0</pose><geometry><box><size>0.05 2.1 0.5</size></box></geometry></collision>
+        <visual name="wall_right"><pose>2.025 1 0.25 0 0 0</pose><geometry><box><size>0.05 2.1 0.5</size></box></geometry></visual>
+      </link>
+    </model>
+  </world>
+</sdf>

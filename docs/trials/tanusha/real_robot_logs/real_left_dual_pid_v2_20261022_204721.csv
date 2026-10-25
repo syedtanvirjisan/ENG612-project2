@@ -1,0 +1,1 @@
+timestamp,elapsed_s,state,target_m,left_m,front_m,front_right_m,wall_error_m,speed_reference_m_s,measured_speed_m_s,speed_error_m_s,cmd_linear_m_s,cmd_angular_rad_s,yaw_deg,turn_count,kp,ki,kd,kp_linear,ki_linear,kd_linear,minimum_speed,nominal_speed,maximum_speed
